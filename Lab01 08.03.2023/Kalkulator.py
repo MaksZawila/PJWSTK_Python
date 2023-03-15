@@ -1,6 +1,6 @@
 # Maksymilian Zawiła s25085 gr.24c
 
-eq = input()
+eq = input("Podaj działanie (np. '2 + 2'): ")
 
 parts = eq.split(" ")
 if len(parts) < 3:
