@@ -1,3 +1,5 @@
+# Maksymilian Zawiła s25085 24c.
+
 a = float(input("Podaj a: "))
 b = float(input("Podaj b: "))
 c = float(input("Podaj c: "))
