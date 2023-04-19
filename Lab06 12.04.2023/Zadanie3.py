@@ -1,3 +1,5 @@
+# Maksymilian Zawiła s25085 gr.24c
+
 def sito_eratostenesa_for(n):
     from math import sqrt
     lista_liczb = []
