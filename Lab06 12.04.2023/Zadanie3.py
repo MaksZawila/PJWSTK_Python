@@ -1,19 +1,19 @@
 # Maksymilian Zawiła s25085 gr.24c
 
-def sito_eratostenesa_for(n):
-    from math import sqrt
-    lista_liczb = []
-    lista = [0] + (n * [1])
-    max_liczba = int(sqrt(n))
+def eratosthenes_sieve(n=75):
+    primes = []
+    i = 2
+    while len(primes) < n:
+        is_prime = True
+        for p in primes:
+            if i % p == 0:
+                is_prime = False
+                break
+        if is_prime:
+            primes.append(i)
+            yield i
+        i += 1
 
-    for indeks in range(2,max_liczba+1):
-        if lista[indeks]:
-            for indeks_2 in range(indeks*indeks,n+1,indeks):
-                lista[indeks_2] = 0
-    for element in range(2,n+1):
-        if lista[element]:
-            lista_liczb.append(element)
 
-    print(lista_liczb)
-
-sito_eratostenesa_for(75)
+for i, v in enumerate(eratosthenes_sieve()):
+    print(i + 1, "\b:", v)

@@ -1,0 +1,1 @@
+print("Mariola", "Zbigniew", "Zdzisław", "Sara", "Michalina", sep="\n")
